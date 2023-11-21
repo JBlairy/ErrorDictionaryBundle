@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="reusablecog.error_dictionary.filler.config" class="ReusableCog\ErrorDictionaryBundle\Filler\ConfigFiller" public="false">
+            <argument type="collection" />
+            <argument type="service" id="twig" />
+
+            <tag name="reusablecog.error_dictionary.filler" priority="0" />
+        </service>
+
+        <service id="reusablecog.error_dictionary.generator" class="ReusableCog\ErrorDictionaryBundle\Service\ErrorDictionaryGenerator" public="false" >
+            <argument type="service" id="reusablecog.error_dictionary.filler.config" />
+        </service>
+
+        <service id="reusablecog.error_dictionary.controller.render" class="ReusableCog\ErrorDictionaryBundle\Controller\ErrorDictionaryController" public="true">
+            <argument type="service" id="reusablecog.error_dictionary.generator" />
+        </service>
+    </services>
+
+</container>

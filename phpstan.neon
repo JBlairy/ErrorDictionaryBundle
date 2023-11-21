@@ -1,0 +1,12 @@
+parameters:
+    strictRules:
+        allRules: true
+    phpVersion: 80200
+    bootstrapFiles:
+        - ./vendor/autoload.php
+    parallel:
+        maximumNumberOfProcesses: 3
+    tmpDir: var/cache/ecs
+    level: max
+    paths:
+        - src

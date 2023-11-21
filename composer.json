@@ -1,0 +1,40 @@
+{
+    "name": "reusablecog/error-dictionary-bundle",
+    "license":  "MIT",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "ReusableCog\\ErrorDictionaryBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Julien Blairy",
+            "email": "julien@blairy.fr"
+        }
+    ],
+    "require": {
+        "symfony/dependency-injection": "^6.3",
+        "symfony/http-kernel": "^6.3",
+        "symfony/config": "^6.3"
+    },
+    "require-dev": {
+        "symfony/twig-bundle": "^6.3",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.37",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "phpstan/extension-installer": "^1.3",
+        "pedrotroller/php-cs-custom-fixer": "^2.33"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "phpstan": "./vendor/bin/phpstan analyse --no-progress",
+        "phpcsfixer": "./vendor/bin/php-cs-fixer fix",
+        "phpcsfixer-lint": "./vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "ci": ["@phpcsfixer-lint", "@phpstan"]
+    }
+}
