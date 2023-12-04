@@ -11694,3 +11694,10 @@
 /node_modules/yocto-queue/package.json
 /node_modules/yocto-queue/readme.md
 /node_modules/.yarn-integrity
+/webpack.config.js
+/phpstan.neon
+/yarn.lock
+/composer.lock
+/.php-cs-fixer.dist.php
+/.nvmrc
+/assets/
