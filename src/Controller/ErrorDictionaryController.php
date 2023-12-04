@@ -10,7 +10,7 @@ final class ErrorDictionaryController
 {
     public function __construct(private readonly ErrorDictionaryGenerator $errorDictionaryGenerator) {}
 
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): Response
     {
         return new Response($this->errorDictionaryGenerator->generate());
     }

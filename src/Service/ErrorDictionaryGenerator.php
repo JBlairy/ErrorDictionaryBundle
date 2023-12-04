@@ -8,7 +8,7 @@ final class ErrorDictionaryGenerator
 {
     public function __construct(private readonly TwigRender $configFiller) {}
 
-    public function generate()
+    public function generate(): string
     {
         return $this->configFiller->render();
     }
