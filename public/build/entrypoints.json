@@ -1,0 +1,18 @@
+{
+  "entrypoints": {
+    "errordictionary": {
+      "js": [
+        "/build/runtime.js",
+        "/build/errordictionary.js"
+      ],
+      "css": [
+        "/build/errordictionary.css"
+      ]
+    }
+  },
+  "integrity": {
+    "/build/runtime.js": "sha384-io2RuvB0o9GQxGSPaojiOYW49ZLZK7MjETYKU4WLHWqmly0Ce8aRJB2HmFHc7FxU",
+    "/build/errordictionary.js": "sha384-mumA5WxDD5oxjAt1LIWRpEhybs+MQJo8Calom9sjF9wCFYMt7k/letylydEO9MYl",
+    "/build/errordictionary.css": "sha384-XJE4rGORr6d9l5utHkrIOSWVQxbIR//M+zCDsUd4cnuUqHHHD0m8nlpYhVYGVQ47"
+  }
+}
