@@ -1,0 +1,16 @@
+{
+  "name": "ErrorDictionaryBundle",
+  "author": "Julien Blairy <blairy@julien.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@symfony/webpack-encore": "^4.5.0",
+    "file-loader": "^6.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-notifier": "^1.15.0"
+  }
+}

@@ -30,6 +30,8 @@ final class ErrorDictionaryExtension extends Extension implements PrependExtensi
             ->setArguments([
                 new Reference('twig'),
                 $config['error_definition'],
+                $config['title'],
+                $config['description'],
             ])
             ->addTag('reusablecog.error_dictionary.filler')
         ;
