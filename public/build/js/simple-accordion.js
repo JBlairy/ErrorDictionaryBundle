@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){let e,t=document.getElementsByClassName("accordion");for(e=0;e<t.length;e++)0===e&&t[e].parentNode.classList.toggle("active"),t[e].addEventListener("click",(function(){this.parentNode.classList.toggle("active")}))}));

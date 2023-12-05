@@ -37,9 +37,13 @@
                 {% if 0 != category.elements.count %}
                     {% for key, error in category.elements %}
                         <div class="accordion_container error">
-                            <button id="{{ error.code }}" class="accordion"><span>{{ error.code }}</span><span>{{ error.label }}</span><i>{{ chevron | raw }}</i></button>
+                            <button id="{{ error.code }}" class="accordion">
+                                <span>{{ error.code }}</span><span>{{ error.label }}</span><i>{{ chevron | raw }}</i>
+                            </button>
                             <div class="panel">
-                                <div class="exception"><span><b>{{ "Exception"|trans }}: </b> {{ error.exception }}</span><span><b>{{ "Status Code"|trans }}: </b> {{ error.statusCode }}</span></div>
+                                <div class="exception">
+                                    <span><b>{{ "Exception"|trans }}: </b> {{ error.exception }}</span><span><b>{{ "Status Code"|trans }}: </b> {{ error.statusCode }}</span>
+                                </div>
                                 <div>{{ error.description }}</div>
                             </div>
                         </div>
