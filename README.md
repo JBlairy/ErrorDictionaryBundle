@@ -5,6 +5,8 @@
 <br>
 The Error Dictionary Bundle is a Symfony bundle designed to simplify the generation of error management pages. It allows you to display error descriptions, associated codes, exceptions, and response codes by simply filling out a YAML configuration file.
 
+<img width="1000" src="./docs/capture.png">
+
 ## Installation
 
 You can install the ErrorDictionary using Composer:
@@ -26,13 +28,13 @@ To use the Error Dictionary Bundle, you need to define error codes and their det
 #config/packages/error_dictionary.yaml
 error_dictionary:
     error_definition:
-        999999:
+        '999999':
             label: The resource was not found in database.
             description: The resource was not found in database.
             category: Home
             status_code: 404
             exception: ResourceNotFound
-        9E8302:
+        '9E8302':
             label: Incorrect payload for the registration API.
             description: In the registration API all fields are required.
             category: Account
